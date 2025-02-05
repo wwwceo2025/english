@@ -9,7 +9,171 @@ export interface Word {
 }
 
 export const vocabularyData: Word[] = [
+  // 新增商务词汇
+  {
+    id: 31,
+    english: "procurement",
+    chinese: "采购，购买",
+    pronunciation: "/prəˈkjʊəmənt/",
+    example: "Our procurement team is responsible for sourcing new suppliers.",
+    category: "business"
+  },
+  {
+    id: 32,
+    english: "vendor",
+    chinese: "供应商，销售商",
+    pronunciation: "/ˈvendə/",
+    example: "We are looking for reliable vendors for our new product line.",
+    category: "business"
+  },
+  {
+    id: 33,
+    english: "logistics",
+    chinese: "物流，后勤",
+    pronunciation: "/ləˈdʒɪstɪks/",
+    example: "The logistics department handles all shipping arrangements.",
+    category: "business"
+  },
+  // 新增日常交际词汇
+  {
+    id: 34,
+    english: "coordinate",
+    chinese: "协调，配合",
+    pronunciation: "/kəʊˈɔːdɪneɪt/",
+    example: "We need to coordinate our efforts to meet the deadline.",
+    category: "daily"
+  },
+  {
+    id: 35,
+    english: "delegate",
+    chinese: "委派，授权",
+    pronunciation: "/ˈdelɪɡeɪt/",
+    example: "I will delegate these tasks to my team members.",
+    category: "daily"
+  },
+  // 新增电话沟通词汇
+  {
+    id: 36,
+    english: "dial in",
+    chinese: "拨号接入",
+    pronunciation: "/daɪəl ɪn/",
+    example: "Please dial in using the conference number provided.",
+    category: "phone"
+  },
+  {
+    id: 37,
+    english: "disconnect",
+    chinese: "断开连接",
+    pronunciation: "/dɪskəˈnekt/",
+    example: "The call might disconnect if you move to the basement.",
+    category: "phone"
+  },
+  // 新增邮件写作词汇
+  {
+    id: 38,
+    english: "acknowledge",
+    chinese: "确认收到，承认",
+    pronunciation: "/əkˈnɒlɪdʒ/",
+    example: "Please acknowledge receipt of this important document.",
+    category: "email"
+  },
+  {
+    id: 39,
+    english: "proceed",
+    chinese: "继续进行，处理",
+    pronunciation: "/prəˈsiːd/",
+    example: "Once you confirm, we will proceed with the order.",
+    category: "email"
+  },
+  {
+    id: 40,
+    english: "compile",
+    chinese: "汇编，整理",
+    pronunciation: "/kəmˈpaɪl/",
+    example: "I will compile all the information and send it to you.",
+    category: "email"
+  },
   // 外贸相关词汇
+  {
+    id: 21,
+    english: "purchase order",
+    chinese: "采购订单",
+    pronunciation: "/ˈpɜːtʃəs ˈɔːdə/",
+    example: "We will process your purchase order within 24 hours.",
+    category: "business"
+  },
+  {
+    id: 22,
+    english: "inventory",
+    chinese: "库存",
+    pronunciation: "/ˈɪnvəntri/",
+    example: "We need to check our inventory before accepting new orders.",
+    category: "business"
+  },
+  {
+    id: 23,
+    english: "wholesale",
+    chinese: "批发",
+    pronunciation: "/ˈhəʊlseɪl/",
+    example: "We offer wholesale prices for bulk orders.",
+    category: "business"
+  },
+  {
+    id: 24,
+    english: "customs clearance",
+    chinese: "清关",
+    pronunciation: "/ˈkʌstəmz ˈklɪərəns/",
+    example: "The goods are currently undergoing customs clearance.",
+    category: "business"
+  },
+  {
+    id: 25,
+    english: "quality control",
+    chinese: "质量控制",
+    pronunciation: "/ˈkwɒləti kənˈtrəʊl/",
+    example: "All products must pass our strict quality control standards.",
+    category: "business"
+  },
+  {
+    id: 26,
+    english: "postpone",
+    chinese: "推迟，延期",
+    pronunciation: "/pəˈspəʊn/",
+    example: "Due to unforeseen circumstances, we need to postpone the meeting.",
+    category: "daily"
+  },
+  {
+    id: 27,
+    english: "collaborate",
+    chinese: "合作",
+    pronunciation: "/kəˈlæbəreɪt/",
+    example: "Our teams will collaborate on this project.",
+    category: "daily"
+  },
+  {
+    id: 28,
+    english: "conference call",
+    chinese: "电话会议",
+    pronunciation: "/ˈkɒnfərəns kɔːl/",
+    example: "Let's schedule a conference call with our international partners.",
+    category: "phone"
+  },
+  {
+    id: 29,
+    english: "reception",
+    chinese: "信号接收",
+    pronunciation: "/rɪˈsepʃn/",
+    example: "I'm sorry, but the reception is very poor in this area.",
+    category: "phone"
+  },
+  {
+    id: 30,
+    english: "draft",
+    chinese: "草稿",
+    pronunciation: "/drɑːft/",
+    example: "I'll send you a draft of the email before sending it to the client.",
+    category: "email"
+  },
   {
     id: 1,
     english: "quotation",

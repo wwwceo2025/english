@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { vocabularyData, Word } from '@/data/vocabulary';
+import { vocabularyData } from '@/data/vocabulary';
 
 type Category = 'all' | 'business' | 'daily' | 'phone' | 'email';
 
