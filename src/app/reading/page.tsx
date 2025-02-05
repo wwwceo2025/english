@@ -95,7 +95,7 @@ export default function ReadingPage() {
           </Link>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+        <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-lg p-8 border border-gray-200/50 dark:border-gray-700/50">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             阅读理解
           </h1>
@@ -123,7 +123,7 @@ export default function ReadingPage() {
             <div className="flex justify-center">
               <button
                 onClick={() => setShowQuestions(!showQuestions)}
-                className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                className="bg-blue-500 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-600 transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 {showQuestions ? '隐藏理解测试' : '开始理解测试'}
               </button>
@@ -159,7 +159,7 @@ export default function ReadingPage() {
                 {!showResults && (
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="w-full bg-blue-500 text-white py-3 rounded-xl font-medium hover:bg-blue-600 transition-all duration-200 shadow-sm hover:shadow-md"
                     disabled={selectedAnswers.length !== sampleArticle.questions.length}
                   >
                     提交答案
@@ -167,7 +167,7 @@ export default function ReadingPage() {
                 )}
 
                 {showResults && (
-                  <div className="bg-green-100 dark:bg-green-900 p-6 rounded-lg">
+                  <div className="bg-green-100/80 dark:bg-green-900/30 backdrop-blur-xl p-6 rounded-xl border border-green-200/50 dark:border-green-700/50">
                     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
                       测试结果
                     </h4>

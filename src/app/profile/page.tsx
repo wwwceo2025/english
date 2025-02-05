@@ -57,14 +57,14 @@ export default function ProfilePage() {
         </div>
 
         <div className="space-y-8">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-lg p-8 border border-gray-200/50 dark:border-gray-700/50">
             <div className="flex items-center justify-between mb-6">
               <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
                 Personal Information
               </h1>
               <button
                 onClick={isEditing ? handleSave : () => setIsEditing(true)}
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-sm font-medium bg-blue-500/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-lg hover:bg-blue-500/20 dark:hover:bg-blue-400/20 transition-colors"
               >
                 {isEditing ? 'Save' : 'Edit'}
               </button>
@@ -80,7 +80,7 @@ export default function ProfilePage() {
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="w-full p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
+                    className="w-full p-2 border rounded-xl bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm border-gray-200/50 dark:border-gray-600/50 focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-200"
                   />
                 ) : (
                   <p className="text-gray-900 dark:text-white">{username}</p>
@@ -96,7 +96,7 @@ export default function ProfilePage() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
+                    className="w-full p-2 border rounded-xl bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm border-gray-200/50 dark:border-gray-600/50 focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all duration-200"
                   />
                 ) : (
                   <p className="text-gray-900 dark:text-white">{email}</p>
@@ -105,7 +105,7 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-lg p-8 border border-gray-200/50 dark:border-gray-700/50">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Learning Statistics
             </h2>
@@ -153,7 +153,7 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-lg p-8 border border-gray-200/50 dark:border-gray-700/50">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Learning Streak
             </h2>
